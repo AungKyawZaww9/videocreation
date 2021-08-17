@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Creating</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <div class="container">
+        <h2 id="title" class="title">Video Name</h2>
+
+            <video src="video/IU_NAKKA.mp4" id="video" class="screen" poster="img/poster.png"></video>
+
+        
+        <div class="controls">
+            <div class="bigbtn">
+
+                <button id="back" class="btn"><i class="fas fa-backward fa-2x"></i></button>
+                <button id="play" class="btn"><i class="fas fa-play fa-2x"></i></button>
+                <button id="next" class="btn"><i class="fas fa-forward fa-2x"></i></button>
+                <button id="stop" class="btn"><i class="fas fa-stop fa-2x"></i></button>
+                <span id="timespan" class="timespan">00:00</span>
+
+            </div>
+
+            <input type="range" id="range" class="range" min="0" max="100" step="0.1" value="0">
+           
+        </div>
+
+        <button id="bar" class="btn"><i class="fas fa-bars fa-1x"></i></button>
+
+    </div>
+
+    <ul id="samplebox" class="samplebox">
+        <li>
+            <div class="sample">
+                <p>IU_NAKKA</p>
+                <video src="video/IU_NAKKA.mp4" id="samplevideo" class="one" poster="img/IU_NAKKA.jpg"></video>
+            </div>
+        </li>
+
+        <li>
+            <div class="sample">
+                <p>IU_CELEBRITY</p>
+                <video src="video/IU_CELEBRITY.mp4" id="samplevideo" class="two" poster="img/IU_CELEBRITY.jpg"></video>
+            </div>
+        </li>
+
+        <li>
+            <div class="sample">
+                <p>IU_COIN</p>
+                <video src="video/  .mp4" id="samplevideo" class="three" poster="img/IU_COIN.jpg"></video>
+            </div>
+        </li>
+
+        <li>
+            <div class="sample">
+                <p>IU_LIAC</p>
+                <video src="video/IU_LIAC.mp4" id="samplevideo" class="four" poster="img/IU_LIAC.jpg"></video>
+            </div>
+        </li>
+
+        <li>
+            <div class="sample">
+                <p>IU_SOMEDAY</p>
+                <video src="video/IU_SOMEDAY.mp4" id="samplevideo" class="five" poster="img/IU_SOMEDAY.jpg"></video>
+            </div>
+        </li>
+
+
+        <li>
+            <div class="sample">
+                <p>IU_BIBI</p>
+                <video src="video/IU_BIBI.mp4" id="samplevideo" class="six" poster="img/IU_BIBI.jpg"></video>
+            </div>
+        </li>
+        
+    </ul>
+
+    <!-- <span class="span"></span>
+    <span class="span"></span>
+    <span class="span"></span> -->
+
+
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>

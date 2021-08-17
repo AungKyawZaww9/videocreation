@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+    background-color: #faee1c;
+    height: 100vh;
+
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    margin:0;
+    overflow-x: hidden;
+
+
+}
+
+.container{
+    width:400px;
+    cursor: pointer;
+
+    position: relative;
+    transform: translate(150px);
+
+    transition:all 1s;
+    
+}
+
+.container.show{
+    transform: translate(0);
+}
+
+.container h2{
+    /* text-align: center; */
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 14px;
+
+    position: absolute;
+    top:0;
+    left:20px;
+
+    opacity: 0;
+
+    transform: translateY(-200%);
+    transition: all 0.5s;
+}
+
+.container:hover h2{
+    opacity: 1;
+    transform:translateY(0);
+}
+
+.container video{
+    background-color: #000;
+    width:100%;
+}
+
+.controls{
+    width:400px;
+    padding:50px 0;
+    background-color:rgba(224, 186, 79,0.2);
+
+    position: relative;
+
+    opacity: 0;
+    transition:all 0.5s;
+
+}
+
+.container:hover .controls{
+    opacity: 1;
+    transform: translateY(-100%);
+}
+
+
+
+.btn{
+    background-color: transparent;
+    border:none;
+    margin:0 5px;
+    cursor: pointer;
+
+}
+
+.btn .fa-forward,.btn .fa-backward{
+    color:#fff;  
+}
+
+.btn .fa-stop{
+    color:red;
+}
+
+.btn .fa-backward:active,.btn .fa-forward:active,.btn .fa-stop:active{
+    color:blue;
+}
+
+.btn .fa-play{
+    color:#ac3f21;
+}
+
+.btn .fa-pause{
+    color:#be6a15;
+}
+
+.timespan{
+    font-weight: bold;
+    color:#fff;
+}
+
+.bigbtn{
+    margin-left: 25%;
+}
+
+.range{
+    width: 70%;
+    position:absolute;
+    top:10px;
+    left:50%;
+    transform: translate(-50%);
+    cursor: pointer;
+
+}
+
+.range:focus{
+    outline:0;
+}
+
+.fa-bars{
+    color:#fff;
+    position:absolute;
+    top:5px;
+    right:10px;
+}
+
+.fa-bars:active{
+    color:blue;
+}
+
+@media(max-width:900px){
+    .container,.controls{
+        width:400px;
+    }
+}
+
+.samplebox{
+    max-height: 400px;
+    overflow-y:auto;
+
+    transition: all 1s;
+    transform: translate(500px);
+    opacity: 0;
+}
+
+.samplebox.show{
+    opacity: 1;
+    transform: translate(0);
+
+}
+
+
+li{
+    list-style-type: none;
+}
+.sample{
+    width:300px;
+
+    position: relative;
+
+}
+
+.sample video{
+    background-color: black;
+    
+    width: 300px;
+    height: 100px;
+    cursor: pointer;
+
+}
+
+.sample p{
+    color:#ac3f21;
+    font-size:14px;
+    margin:10px 0;
+    padding:0;
+}
+
+
+
+
+.span{
+    width:5px;
+    height: 20px;
+    background-color: #fff;
+    margin:0 2px;
+
+    animation-name:myani;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+span:nth-of-type(1){
+    animation-delay: 0.2s;
+}
+
+span:nth-of-type(2){
+    animation-delay: 0.5s;
+}
+
+span:nth-of-type(3){
+    animation-delay: 0.9s;
+}
+
+@keyframes myani{
+    0%{
+        width: 5px;
+        height: 0;
+    }
+
+    50%{
+        height: 20px;
+    }
+
+    100%{
+        width: 5px;
+        height:10px;
+    }
+}
+
+
+
+
+
